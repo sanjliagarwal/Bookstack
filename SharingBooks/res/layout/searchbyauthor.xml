@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffd3f18f" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+		
+
+    <EditText
+        android:id="@+id/searchauthor"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:hint="Enter the author of book"
+        android:paddingTop="30sp"
+        android:layout_margin="10dp"
+        android:textColor="#ff000000"
+        android:ems="10">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/searchbuttonauthor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+    <TextView
+		    android:id="@+id/cattvname"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    <ListView
+        android:id="@+id/searchlvauthor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff" >
+
+	</ListView>
+</LinearLayout>
