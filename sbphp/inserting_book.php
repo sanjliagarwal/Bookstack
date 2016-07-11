@@ -4,12 +4,17 @@
  * Following code will create a new product row
  * All product details are read from HTTP Post Request
  */
+<<<<<<< HEAD
 $con=mysqli_connect("localhost","root","","register_usersfinal");
+=======
+$con=mysqli_connect("localhost","root","","register_users");
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 if (mysqli_connect_errno($con))
 {
    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 $response = array();
+<<<<<<< HEAD
 $pp="SELECT * FROM addbook";
 $rr=mysqli_query($con,$pp);
 if (empty($rr))
@@ -21,6 +26,9 @@ if (empty($rr))
 		echo "table unable to create";
 	}
 }
+=======
+
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 // check for required fields
 if (isset($_POST['nameofbook']) && isset($_POST['author']) && isset($_POST['email']) && isset($_POST['category'])) {
     

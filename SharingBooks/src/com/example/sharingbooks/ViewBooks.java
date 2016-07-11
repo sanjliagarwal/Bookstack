@@ -23,7 +23,10 @@ import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+<<<<<<< HEAD
 import android.widget.Toast;
+=======
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 
 public class ViewBooks extends Activity {
 
@@ -58,7 +61,11 @@ public class ViewBooks extends Activity {
 	}
 
 	class viewing extends AsyncTask<String, String, String> {
+<<<<<<< HEAD
 		int vv;
+=======
+
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 		protected String doInBackground(String... args) {
 			String smail = mailofuser;
 
@@ -83,7 +90,10 @@ public class ViewBooks extends Activity {
 				}
 				int success;
 				success = json.getInt("success");
+<<<<<<< HEAD
 				vv=success;
+=======
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 				Log.i("CLOCKS", "Value of success View" + success);
 				if (success == 1) {
 					// found sn emsil
@@ -121,10 +131,38 @@ public class ViewBooks extends Activity {
 						e1.printStackTrace();
 					}
 					Log.i("CLOCKS", "Just before gthe intent statemnet");
+<<<<<<< HEAD
 				} else {
 					try {
 						Class<?> myclass = Class
 								.forName("com.example.sharingbooks.MainScreen");
+=======
+					/*Intent i = new Intent(ViewBooks.this, Mainscreen.class);
+					i.putExtra("nameofuser", namepp);
+					i.putExtra("mailid", mailid);
+					Log.i("CLOCKS", "Intent staemment activated");
+					if (i != null) {
+						Log.i("CLOCKS", "Intent is not null" + i.toString());
+					} else {
+						Log.e("CLOCKS", "error in intent" + i.toString());
+					}
+					startActivity(i);
+					Log.i("CLOCKS", "activity started");
+
+					// closing this screen
+					finish();*/
+				} else {
+					/*
+					 * AlertDialog.Builder pd=new
+					 * AlertDialog.Builder(LoginActivity.this); pd.create();
+					 * pd.setMessage("Invalid details ");
+					 * pd.setCancelable(false); pd.setPositiveButton("Ok",
+					 * null); pd.show();
+					 */
+					try {
+						Class<?> myclass = Class
+								.forName("com.example.sharingbooks.LoginActivity");
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 						Intent myintent = new Intent(ViewBooks.this, myclass);
 						startActivity(myintent);
 					} catch (ClassNotFoundException e) {
@@ -146,6 +184,7 @@ public class ViewBooks extends Activity {
 		 * **/
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
+<<<<<<< HEAD
 			if (vv==1)
 			{
 			lv.setAdapter(mArrayAdapter);
@@ -156,6 +195,9 @@ public class ViewBooks extends Activity {
 						Toast.LENGTH_LONG);
 				tt.show();
 			}
+=======
+			lv.setAdapter(mArrayAdapter);
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 		}
 	}
 }

@@ -1,6 +1,10 @@
 <?php
 $response = array();
+<<<<<<< HEAD
 $con=mysqli_connect("localhost","root","","register_usersfinal");
+=======
+$con=mysqli_connect("localhost","root","","register_users");
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 if(mysqli_connect_errno($con))
 {
 	echo "Database can't be reached";

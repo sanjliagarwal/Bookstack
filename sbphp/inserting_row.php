@@ -4,6 +4,7 @@
  * Following code will create a new product row
  * All product details are read from HTTP Post Request
  */
+<<<<<<< HEAD
 $con=mysqli_connect("localhost","root","","register_usersfinal");
 if (mysqli_connect_errno($con))
 {
@@ -30,6 +31,15 @@ if (empty($ch))
 		echo "table unable to create";
 	}
 }
+=======
+$con=mysqli_connect("localhost","root","","register_users");
+if (mysqli_connect_errno($con))
+{
+   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+$response = array();
+
+>>>>>>> 48af31befd35dce394d068c8fe546fe03e70be38
 // check for required fields
 //if (isset($_POST['name']) && isset($_POST['password']) && isset($_POST['conpassword']) && isset($_POST['email'])) {
     
