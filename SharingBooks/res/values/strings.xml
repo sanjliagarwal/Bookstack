@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Sharing Books</string>
+    <string name="heading_spinner">Choose the category</string>
+    <string name="heading">Choose the category</string>
+    <string name="blue">blue</string>
+
+</resources>

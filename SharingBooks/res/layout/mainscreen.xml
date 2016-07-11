@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" 
+    android:background="#ffd3f18f">
+
+    <TextView
+        android:id="@+id/m_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/m_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addcollection"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/m_addbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD BOOK OPTION" 
+        android:layout_gravity="center"
+        android:padding="5dp"/>
+
+    <ImageButton
+        android:id="@+id/m_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/m_viewbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW YOUR COLLECTION"
+        android:padding="5dp"
+        android:layout_gravity="center" />
+
+    <ImageButton
+        android:id="@+id/m_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_search_category_default" />
+
+     <TextView
+        android:id="@+id/m_searchbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH FOR A BOOK"
+        android:padding="5dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

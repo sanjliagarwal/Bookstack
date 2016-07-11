@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd3f18f"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <Button
+        android:id="@+id/sbname"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@drawable/buttonimage"
+        android:padding="20dp"
+        android:text="Search by name of book"
+        android:textColor="#ffffffff"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sbauthor"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@drawable/buttonimage"
+        android:padding="20dp"
+        android:text="Search book by author"
+        android:textColor="#ffffffff"
+         android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sbcategory"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@drawable/buttonimage"
+        android:padding="20dp"
+        android:text="Search book by category"
+        android:textColor="#ffffffff"
+         android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
